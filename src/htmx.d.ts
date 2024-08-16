@@ -7,6 +7,7 @@ declare namespace htmx {
     const ajax: (verb: HttpVerb, path: string, context: string | Element | HtmxAjaxHelperContext) => Promise<void>;
     const find: (eltOrSelector: string | ParentNode, selector?: string) => Element;
     const findAll: (eltOrSelector: string | ParentNode, selector?: string) => NodeListOf<Element>;
+    const saveCurrentPageToHistory: () => void;
     const closest: (elt: string | Element, selector: string) => Element;
     function values(elt: Element, type: HttpVerb): any;
     const remove: (elt: Node, delay?: number) => void;
