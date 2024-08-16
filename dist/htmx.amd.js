@@ -23,6 +23,8 @@ var htmx = (function() {
     find: null,
     /** @type {typeof findAll} */
     findAll: null,
+    /** @type {typeof saveCurrentPageToHistory} */
+    saveCurrentPageToHistory: null,
     /** @type {typeof closest} */
     closest: null,
     /**
@@ -289,6 +291,7 @@ var htmx = (function() {
   htmx.ajax = ajaxHelper
   htmx.find = find
   htmx.findAll = findAll
+  htmx.saveCurrentPageToHistory = saveCurrentPageToHistory
   htmx.closest = closest
   htmx.remove = removeElement
   htmx.addClass = addClassToElement
